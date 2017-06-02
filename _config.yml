@@ -3,17 +3,26 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
+title: The Rickest Rick
+subtitle: Wubba lubba dub dub
 description:
-author: John Doe
+  درباره‌ی چیز‌هایی که به نظرم جالبه می‌نویسم.
+  
+  همینطوری!
+keywords:
+  - Kayvan Mazaheri
+  - Blog
+  - کیوان مظاهری
+  - وبلاگ
+  - بلاگ
+author: Kayvan Mazaheri
 language:
-timezone:
+timezone: Iran
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://kmazaheri.ir
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: cactus-dark
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
