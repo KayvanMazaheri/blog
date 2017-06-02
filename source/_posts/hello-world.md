@@ -1,38 +1,32 @@
 ---
-title: Hello World
+title: سلام دنیا
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+سلام،
+این یه وبلاگ شخصیه که با استفاده از [Hexo](https://hexo.io/) ساخته شده.
 
-## Quick Start
+در ادامه لیستی از دستورات کاربردی Hexo اومده.
+## شروع سریع
 
-### Create a new post
+### ایجاد یک پست جدید
 
 ``` bash
 $ hexo new "My New Post"
 ```
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+اطلاعات بیشتر: [نوشتن](https://hexo.io/docs/writing.html)
 
-### Run server
+### اجرای سرور
 
 ``` bash
 $ hexo server
 ```
 
-More info: [Server](https://hexo.io/docs/server.html)
+اطلاعات بیشتر: [سرور](https://hexo.io/docs/server.html)
 
-### Generate static files
+### ایجاد فایل‌های ثابت
 
 ``` bash
 $ hexo generate
 ```
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+اطلاعات بیشتر: [Generating](https://hexo.io/docs/generating.html)
