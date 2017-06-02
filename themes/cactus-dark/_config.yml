@@ -1,8 +1,7 @@
 nav:
-  خونه: /
-  درباره: /about/
+  صفحه اول: /
   نوشته‌ها: /archives/
-  پروژه هام: http://github.com/KayvanMazaheri
+  GitHub: http://github.com/KayvanMazaheri
 
 projects_url: http://github.com/KayvanMazaheri
 
@@ -29,7 +28,7 @@ customize:
     social_links:
         github: https://github.com/KayvanMazaheri
         linkedin: https://linkedin.com/in/kmazaheri
-    show_all_posts: false
+    show_all_posts: true
     post_count: 5
     highlight: rainbow
 
