@@ -1,0 +1,34 @@
+index:
+    home: 'خانه'
+    about: 'درباره'
+    search: 'جستجو'
+    archive: 'آرشیو'
+    category: 'دسته‌بندی'
+    uncategorized: 'دسته‌بندی نشده'
+    tag: 'برچسب'
+nav:
+    current_page:
+        other: 'صفحه‌ی %d '
+    total_page:
+        other: 'از %d'
+sidebar:
+    follow: 'دنبال کنید'
+    newer: 'جدید‌تر'
+    older: 'قدیمی‌تر'
+    recents: 'پست‌های اخیر'
+    sticky: 'محبوب'
+    archives: 'آرشیو'
+    categories: 'دسته‌بندی ها'
+    links: 'لینک‌ها'
+    tags: 'برچسب‌ها'
+    tag_cloud: 'ابر برچسب'
+article:
+    comments: 'دیدگاه‌ها'
+    share: 'اشتراک گذاری'
+insight:
+    hint: 'یه چیزی بنویس...'
+    posts: 'پست ها'
+    pages: 'صفحه‌ها'
+    categories: 'دسته‌بندی‌ها'
+    tags: 'برچسب‌ها'
+    untitled: '(بدون موضوع)'
