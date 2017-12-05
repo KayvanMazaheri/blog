@@ -3,13 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: The Rickest Rick
-subtitle: Wubba lubba dub dub
+title: Nuclear Chiz
+subtitle:
 description:
   درباره‌ی چیز‌هایی که به نظرم جالبه می‌نویسم.
 
   همینطوری!
 keywords:
+  - نوکلیر چیز
+  - Nuclear Chiz
+  - /ˈnuːkliːər ʧiːz/
   - Kayvan Mazaheri
   - Blog
   - کیوان مظاهری
@@ -43,7 +46,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
