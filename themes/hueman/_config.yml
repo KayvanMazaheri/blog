@@ -17,10 +17,11 @@ customize:
     thumbnail: true # enable posts thumbnail, options: true, false
     favicon: # path to favicon
     social_links: # for more icons, please see http://fontawesome.io/icons/#brand
-        twitter:
+        # twitter: https://twitter.com/KayvanMazaheri
         facebook:
-        google-plus: /
+        # google-plus: https://plus.google.com/+KayvanMazaheri
         github: https://github.com/KayvanMazaheri
+        linkedin: https://linkedin.com/in/kmazaheri
         weibo:
         rss:
 
