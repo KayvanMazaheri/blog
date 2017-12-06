@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>کد‌های سیبیل دار | Nuclear Chiz</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="معرفی,برنامه نویسی" />
+    
+    <meta name="description" content="قضیه چیه؟خیلی وقت‌ها توی برنامه‌ای که می‌نویسیم نیاز داریم یک رشته (String) رو، با استفاده از داده‌هایی که الان توی برنامه داریم، بسازیم و برگردونیم، یا حتی فقط چاپشون کنیم.">
+<meta name="keywords" content="معرفی,برنامه نویسی">
+<meta property="og:type" content="article">
+<meta property="og:title" content="کد‌های سیبیل دار">
+<meta property="og:url" content="http://kmazaheri.ir/2017/12/06/mustached-codes/index.html">
+<meta property="og:site_name" content="Nuclear Chiz">
+<meta property="og:description" content="قضیه چیه؟خیلی وقت‌ها توی برنامه‌ای که می‌نویسیم نیاز داریم یک رشته (String) رو، با استفاده از داده‌هایی که الان توی برنامه داریم، بسازیم و برگردونیم، یا حتی فقط چاپشون کنیم.">
+<meta property="og:locale" content="fa">
+<meta property="og:image" content="http://kmazaheri.ir/blog/2017/12/06/mustached-codes/mustache.png">
+<meta property="og:updated_time" content="2017-12-06T14:15:52.678Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="کد‌های سیبیل دار">
+<meta name="twitter:description" content="قضیه چیه؟خیلی وقت‌ها توی برنامه‌ای که می‌نویسیم نیاز داریم یک رشته (String) رو، با استفاده از داده‌هایی که الان توی برنامه داریم، بسازیم و برگردونیم، یا حتی فقط چاپشون کنیم.">
+<meta name="twitter:image" content="http://kmazaheri.ir/blog/2017/12/06/mustached-codes/mustache.png">
+    
+
+    
+
+    
+
+    <link rel="stylesheet" href="/blog/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/libs/shabnam-font/shabnam.css">
+    <link rel="stylesheet" href="/blog/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/blog/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/blog/css/style.css">
+
+    <script src="/blog/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/blog/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/blog/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/blog/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/blog/">خانه</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/blog/about/index.html">درباره</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="جستجو" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="یه چیزی بنویس..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'پست ها',
+            PAGES: 'صفحه‌ها',
+            CATEGORIES: 'دسته‌بندی‌ها',
+            TAGS: 'برچسب‌ها',
+            UNTITLED: '(بدون موضوع)',
+        },
+        ROOT_URL: '/blog/',
+        CONTENT_URL: '/blog/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/blog/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    دسته‌بندی نشده
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-mustached-codes" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        کد‌های سیبیل دار
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/blog/2017/12/06/mustached-codes/" class="article-date">
+            <time datetime="2017-12-06T07:28:29.000Z" itemprop="datePublished">2017-12-06</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/blog/tags/برنامه-نویسی/">برنامه نویسی</a>, <a class="tag-link" href="/blog/tags/معرفی/">معرفی</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="قضیه-چیه؟"><a href="#قضیه-چیه؟" class="headerlink" title="قضیه چیه؟"></a>قضیه چیه؟</h2><p>خیلی وقت‌ها توی برنامه‌ای که می‌نویسیم نیاز داریم یک رشته (String) رو، با استفاده از داده‌هایی که الان توی برنامه داریم، بسازیم و برگردونیم، یا حتی فقط چاپشون کنیم.<br><a id="more"></a><br>مثلا توی سایت جدیدتون، می‌خواید بعد از ورود به کاربرتون خوش‌آمد بگید، جوری که مثلا اگه کاربر اسمش <strong>کیوان</strong> بود بهش بگه <strong>سلام،کیوان</strong>.<br>نکته مهم اینه که این رشته قراره با اطلاعات اون لحظه‌ی برنامه ساخته بشه (که مثلا توی یه متغیر ذخیره شدن).  </p>
+<h2 id="حالت-عادی-چی‌کار-می‌کردیم-خب؟"><a href="#حالت-عادی-چی‌کار-می‌کردیم-خب؟" class="headerlink" title="حالت عادی چی‌کار می‌کردیم خب؟"></a>حالت عادی چی‌کار می‌کردیم خب؟</h2><p>مثلا توی <span dir="ltr"><code>C++</code></span> یه همچین حرکتی می‌کردیم:<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">string</span> msg = <span class="string">"سلام، "</span> + user.name;</div><div class="line"><span class="built_in">cout</span> &lt;&lt; msg &lt;&lt; <span class="built_in">endl</span>;</div></pre></td></tr></table></figure></p>
+<p> توی زبان‌های دیگه هم یه همچین کدی رو راحت می‌شه نوشت و خودتون بهتر از من بلدید.</p>
+<h2 id="این-خوب-نیست-یعنی؟"><a href="#این-خوب-نیست-یعنی؟" class="headerlink" title="این خوب نیست یعنی؟"></a>این خوب نیست یعنی؟</h2><p>نه، اصلا !<br>فرض کنید پیامی که قراره چاپ کنیم، به این سادگی نسیت، مثلا قراره بعد از خریدی که کاربر از ساییتون می‌کنه، بهش یک صفحه‌ی فاکتور نشون بدید که توش اسم اقلام خریداری شده، تعدادشون، قیمتشون، جمع قیمت، تخفیف، نام خریدار و هزار تا چیز دیگه رو نشون بدید.<br>مشخصه که یه بخش هایی از این صفحه‌ی فاکتور همیشه ثابته، میتونیم بگیم که صفحه‌ی فاکتور یک قالب خاص داره که توش داده‌های مشتری فعلیتون رو قرار می‌دید و بعد صفحه رو بهش نشون می‌دید.  </p>
+<blockquote>
+<p>خیلی وقت‌ها، داده‌هایی که به کاربران نشان می‌دهیم از یک قالب مشخص پیروی می‌کنند.</p>
+</blockquote>
+<p>واضحه که ساختن این صفحه‌ی فاکتور با استفاده از استراتژی قبلی خیلی راحت نیست. به علاوه‌ی این که کدی که به دست میاد خیلی خوانا نیست و در آینده هم برای تفییرش به احتمال زیاد به مشکل بر‌می‌خوریم.<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// Dear Kayvan, you should pay 31$ for buying these 2 items.</span></div><div class="line">msg = <span class="string">"Dear "</span> + user.name + <span class="string">", you should pay "</span></div><div class="line">    + cart.totalPrice + <span class="string">"$ for buying these "</span> + cart.itemCount + <span class="string">" items."</span>;</div></pre></td></tr></table></figure></p>
+<h2 id="یه-ذره-بهترش-کنیم"><a href="#یه-ذره-بهترش-کنیم" class="headerlink" title="یه ذره بهترش کنیم"></a>یه ذره بهترش کنیم</h2><p>برای کار رفع این مشکلات، همیشه ابزار‌هایی ساخته شده‌اند که کار با قالب‌ها رو برای توسعه‌دهنده‌ها راحت کنند. حتی خیلی جاها توی خود زبان‌های برنامه نویسی یه کارایی کردند برای این منظور:</p>
+<figure class="highlight cpp"><figcaption><span>C++ &nbsp;</span><a href="http://www.cplusplus.com/reference/cstdio/printf/" target="_blank" rel="external">[Printf]</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">printf</span>(<span class="string">"Dear %s, you should pay %s$ for buying these %d items."</span>,</div><div class="line">       user.name, cart.totalPrice, cart.itemCount);</div></pre></td></tr></table></figure>
+<figure class="highlight javascript"><figcaption><span>JavaScript (ES6) &nbsp;</span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals" target="_blank" rel="external">[Template Literals]</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">`Dear <span class="subst">$&#123; user.name &#125;</span>, you should pay <span class="subst">$&#123; cart.totalPrice &#125;</span>$ for buying <span class="subst">$&#123;cart.itemCount&#125;</span> items.`</span>)</div></pre></td></tr></table></figure>
+<h2 id="Template-Systems-amp-Engines"><a href="#Template-Systems-amp-Engines" class="headerlink" title="Template Systems &amp; Engines"></a>Template Systems &amp; Engines</h2><p> نیاز‌های توسعه‌دهنده‌ها معمولا بیشتر از این‌هاست و برای همین Template System ها به وجود اومدند. از Template System های معروف و محبوب میشه به اینا اشاره کرد:  </p>
+<ul>
+<li>Handlebars</li>
+<li>Mustache</li>
+<li>Dust (توسط LinkedIn)</li>
+<li>Nunchuks</li>
+<li>Pug (که قبلا اسمش Jade بود)</li>
+</ul>
+<p>کاری که این سیستم‌ها میکنن به صورت خلاصه اینه که شما با یه فرمت مشخص، یه قالب براشون تعریف می‌کنید و بعد هربار که نیاز داشتید، اطلاعاتتون رو به قالب تزریق می‌کنید، همه چیز خیلی راحت دقیقا همون جایی قرار می‌گیره که شما تعریف کردید.<br>این فالب‌ها معمولا خوانا هستند و به کد شما پیچیدگی اضافه نمی‌کنن.<br>معمولا از کد‌های Logic برنامه جدا هستن.<br>تغییرشون در آینده هم کار آسونیه.</p>
+<img src="/blog/2017/12/06/mustached-codes/mustache.png" alt="کد‌های سیبیل دار" title="کد‌های سیبیل دار">
+<h2 id="سیبیل‌ها-در-کد"><a href="#سیبیل‌ها-در-کد" class="headerlink" title="سیبیل‌ها در کد"></a>سیبیل‌ها در کد</h2><h3 id="Mustache"><a href="#Mustache" class="headerlink" title="Mustache"></a>Mustache</h3><p>یکی از سر‌راست ترین و راحت ترین Templating System هاییه که تا حالا دیدم.<br>کافیه قالبتون رو هرجور که نیاز دارید طراحی کنید، هر جاییش که قراره از مقدار یک متغیر استفاده کنید، می‌تونید از <code>{{ }}</code> استفاده کنید.<br>مثلا:</p>
+<figure class="highlight handlebars"><figcaption><span>Mustache</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Dear <span class="template-variable">&#123;&#123; user.name &#125;&#125;</span>, you should pay <span class="template-variable">&#123;&#123; cart.totalPrice &#125;&#125;</span>$ for buying these <span class="template-variable">&#123;&#123; cart.itemCount &#125;&#125;</span> items.</div></pre></td></tr></table></figure>
+<p> حتی خیلی راحت می‌تونید یه فاکتور <code>HTML</code> درست کنید:</p>
+<figure class="highlight handlebars"><figcaption><span>Mustache Template for Invoice Page</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;div class="invoice"&gt;</div><div class="line">  &lt;p&gt;Invoice for <span class="template-variable">&#123;&#123; user.name &#125;&#125;</span>&lt;/p&gt;</div><div class="line">  &lt;ol&gt;</div><div class="line">    <span class="template-tag">&#123;&#123;# <span class="name">cart.items</span> &#125;&#125;</span></div><div class="line">    &lt;li&gt;<span class="template-variable">&#123;&#123; name &#125;&#125;</span> - <span class="template-variable">&#123;&#123; price &#125;&#125;</span>&lt;/li&gt;</div><div class="line">    <span class="template-tag">&#123;&#123;/ <span class="name">cart.items</span> &#125;&#125;</span></div><div class="line">  &lt;/ol&gt;</div><div class="line">  &lt;button&gt; Pay <span class="template-variable">&#123;&#123; cart.totalPrice &#125;&#125;</span>$ &lt;/button&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>همونطور که توی کد بالا می‌بینید، می‌تونید با استفاده از همین سیبیل‌ها، خیلی راحت حلقه داشته باشید و به ازای تک تک اقلام خریداری شده، یک سطر شامل نام و قیمتش رو توی فاکتور چاپ کنید.</p>
+<p>اگه برای مثال من قالب بالا رو با اطلاعات سبد خرید کاربری با نام <strong>کیوان</strong> پر کنم، نتیجش میشه این:<br><figure class="highlight"><figcaption><span>اطلاعات سبد خرید کیوان</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  user: &#123; name: "Kayvan" &#125;,</div><div class="line">  cart: &#123;</div><div class="line">    items: [&#123; name: "sabzi", price: 200 &#125;, &#123; name: "goje", price: 125 &#125;],</div><div class="line">    itemCount: 2,</div><div class="line">    totalPrice : 325</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<figure class="highlight html"><figcaption><span>خروجی HTML</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"invoice"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Invoice for Kayvan<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">ol</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>sabzi - 200<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>goje - 125<span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span> Pay 325$ <span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>توی مستنداتش می‌تونید بیشتر دربارش یاد بگیرید، برای خیلی از زبان‌ها هم کتابخونه داره و استفاده ازش خیلی راحته:<br><a href="https://mustache.github.io" title="وبسایت Mustache" target="_blank" rel="external">صفحه اصلی وبسایت Mustache</a><br><a href="https://mustache.github.io/mustache.5.html" title="مستندات Mustache" target="_blank" rel="external">مستندات</a></p>
+<h3 id="Handlebars"><a href="#Handlebars" class="headerlink" title="Handlebars"></a>Handlebars</h3><p> اینم هست، خیلی شبیه به Mustache ـه در ظاهر، ولی یه تفاوتایی داره<br> مهم‌ترینش شاید اینه که برخلاف Mustache، هدفش این نیست که Logic-less باشه، برای همین مثلا یه سازوکار‌هایی برای چک کردن شرط داره.  </p>
+<a href="http://handlebarsjs.com" title="وبسایت Handlebars" target="_blank" rel="external">صفحه اصلی وبسایت Handlebars</a>
+<h3 id="لینک‌ها"><a href="#لینک‌ها" class="headerlink" title="لینک‌ها"></a>لینک‌ها</h3><ul>
+<li>اینجا می‌تونید به صورت آنلاین کار با Handlebars و Mustache رو <a href="http://tryhandlebarsjs.com" title="Handlebars Sandbox" target="_blank" rel="external">آزمایش کنید</a>.</li>
+<li>یک راهنمای ساده برای <a href="http://garann.github.io/template-chooser/" title="Template-Engine-Chooser" target="_blank" rel="external">انتخاب Template Engine</a> ( <em>آپدیت نمیشه</em> )</li>
+<li><a href="https://mustache.github.io" title="وبسایت Mustache" target="_blank" rel="external">صفحه اصلی وبسایت Mustache</a></li>
+<li><a href="http://handlebarsjs.com" title="وبسایت Handlebars" target="_blank" rel="external">صفحه اصلی وبسایت Handlebars</a>
+</li>
+</ul>
+<img src="/blog/2017/12/06/mustached-codes/cool-mustache.gif" alt="وقتی یاد می‌گیری از Mustache استفاده کنی" title="وقتی یاد می‌گیری از Mustache استفاده کنی">
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://kmazaheri.ir/2017/12/06/mustached-codes/" data-id="cjauteuks0003fnvexyucjrrz" class="article-share-link"><i class="fa fa-share"></i>اشتراک گذاری</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>دنبال کنید:</p>
+        <ul class="social-links">
+            
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/KayvanMazaheri" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="linkedin" href="https://linkedin.com/in/kmazaheri" target="_blank">
+                        <i class="icon fa fa-linkedin"></i>
+                    </a>
+                </li>
+                
+            
+                
+            
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/blog/2017/12/06/hexo/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">قدیمی‌تر</strong>
+        <p class="article-nav-title">Hexo</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">پست‌های اخیر</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2017/12/06/mustached-codes/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/blog/2017/12/06/mustached-codes/mustache.png)" alt="کد‌های سیبیل دار" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2017/12/06/mustached-codes/" class="title">کد‌های سیبیل دار</a></p>
+                            <p class="item-date"><time datetime="2017-12-06T07:28:29.000Z" itemprop="datePublished">2017-12-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2017/12/06/hexo/" class="thumbnail">
+    
+    
+        <span style="background-image:url(https://hexo.io/logo.svg)" alt="Hexo" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2017/12/06/hexo/" class="title">Hexo</a></p>
+                            <p class="item-date"><time datetime="2017-12-05T21:11:19.000Z" itemprop="datePublished">2017-12-06</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/blog/2017/10/10/hello-world/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/blog/2017/10/10/hello-world/blue-whale.png)" alt="سلام دنیا" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/blog/2017/10/10/hello-world/" class="title">سلام دنیا</a></p>
+                            <p class="item-date"><time datetime="2017-10-10T06:39:14.000Z" itemprop="datePublished">2017-10-10</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">دسته‌بندی ها</h3>
+        <div class="widget">
+            <ul class="category-list"></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">آرشیو</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/12/">دسامبر 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2017/10/">اکتبر 2017</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">برچسب‌ها</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/برنامه-نویسی/">برنامه نویسی</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/معرفی/">معرفی</a><span class="tag-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">ابر برچسب</h3>
+        <div class="widget tagcloud">
+            <a href="/blog/tags/برنامه-نویسی/" style="font-size: 10px;">برنامه نویسی</a> <a href="/blog/tags/معرفی/" style="font-size: 20px;">معرفی</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">لینک‌ها</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/blog/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 | Kayvan Mazaheri</p>
+                <p>قدرت گرفته از <a href="//hexo.io/" target="_blank">Hexo</a>. میزبانی شده توسط <a href="//github.com/KayvanMazaheri/blog" target="_blank">گیت‌هاب</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'kmazaheri';
+    
+    
+    var disqus_url = 'http://kmazaheri.ir/2017/12/06/mustached-codes/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/blog/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/blog/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/blog/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/blog/js/main.js"></script>
+
+    </div>
+</body>
+</html>
