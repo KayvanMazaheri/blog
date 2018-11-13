@@ -17,7 +17,7 @@
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0",
+    "hexo-server": "^0.2.2",
     "moment-jalaali": "^0.7.2",
     "moment-jalali": "^0.3.9"
   }
